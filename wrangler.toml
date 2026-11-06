@@ -1,0 +1,17 @@
+name = "tem-contact-site"
+main = "src/index.js"
+compatibility_date = "2026-11-06"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+run_worker_first = true
+
+[vars]
+TURNSTILE_SITE_KEY = "0x4AAAAAAF2EpHuLGp4a8SCG"
+EMAIL_FROM = "website@tem-ai.com"
+
+[[send_email]]
+name = "EMAIL"
+allowed_sender_addresses = ["website@tem-ai.com"]
+allowed_destination_addresses = ["mark.gillis.ktyc@gmail.com"]
